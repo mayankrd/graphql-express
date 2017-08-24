@@ -1,0 +1,27 @@
+{
+  "name": "graphql-express",
+  "version": "1.0.0",
+  "description": "graphql-express server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayankrd/graphql-express.git"
+  },
+  "keywords": [
+    "graphql",
+    "node",
+    "express.js"
+  ],
+  "author": "Mayank Ranjan Dayal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayankrd/graphql-express/issues"
+  },
+  "homepage": "https://github.com/mayankrd/graphql-express#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
