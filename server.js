@@ -10,10 +10,12 @@ const app = express();
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://127.0.0.1:27017/custdb'); // connect to local mongo databse
 
-
-// graphql - configuring /graphql endpoint
+/* GraphQL
+* configuring /graphql endpoint - entry point to interact with graphql
+* */
 const graphqlHTTP = require('express-graphql');
 const schema = require('./graphql/schema');
+
 app.use('/graphql', graphqlHTTP({
     schema: schema,
     graphiql: true
@@ -21,7 +23,7 @@ app.use('/graphql', graphqlHTTP({
 
 // configuring / endpoint
 app.get('/', function (req, res) {
-    res.send('Express Hello');
+    res.send('Express Hello!');
 });
 
 // bind express app to port 3000
