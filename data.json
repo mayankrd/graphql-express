@@ -1,0 +1,9 @@
+{
+  "customers": [
+    { "id": "1", "name": "John Doe", "email": "john@yahoo.com", "age": 33 },
+    { "id": "2", "name": "Ron Roe", "email": "ron@yahoo.com", "age": 31 },
+    { "id": "3", "name": "Nancy Nano", "email": "nancy@yahoo.com", "age": 32 },
+    { "id": "4", "name": "Jolly Jackson", "email": "jolly@yahoo.com", "age": 30 },
+    { "id": "5", "name": "Rock Rockstar", "email": "rock@yahoo.com", "age": 34 }
+  ]
+}

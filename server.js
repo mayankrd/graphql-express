@@ -26,5 +26,5 @@ app.get('/', function (req, res) {
     res.send('Express Hello!');
 });
 
-// bind express app to port 3000
-app.listen(3000, () => console.log('express app listening on port 3000'));
+// bind express app to port 3001
+app.listen(3001, () => console.log('express app listening on port 3000'));
