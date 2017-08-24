@@ -6,25 +6,17 @@
 const express = require('express');
 const app = express();
 
-// graphql
+// mongoose
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://127.0.0.1:27017/custdb'); // connect to local mongo databse
+
+
+// graphql - configuring /graphql endpoint
 const graphqlHTTP = require('express-graphql');
-const { buildSchema } = require('graphql');
-
-// graphql schema
-const schema = buildSchema(`
-  type Query {
-    hello: String
-  }
-`);
-
-// graphql root or resolver
-const root = { hello: () => 'Hello world!' };
-
-// configuring /graphql endpoint
+const schema = require('./graphql/schema');
 app.use('/graphql', graphqlHTTP({
     schema: schema,
-    rootValue: root,
-    graphiql: true,
+    graphiql: true
 }));
 
 // configuring / endpoint
@@ -32,5 +24,5 @@ app.get('/', function (req, res) {
     res.send('Express Hello');
 });
 
-// bind app to port 3000
+// bind express app to port 3000
 app.listen(3000, () => console.log('express app listening on port 3000'));
