@@ -1,3 +1,4 @@
+[![npm](https://rawgit.com/aleen42/badges/master/src/npm.svg)](https://cdn.rawgit.com/aleen42/badges/master/src/npm.svg) [![github](https://rawgit.com/aleen42/badges/master/src/github.svg)](https://cdn.rawgit.com/aleen42/badges/master/src/github.svg)
 # graphql-express
 Node.js - GraphQL / Express / JSON Server / Axios based data query platform starter kit
 
@@ -10,9 +11,9 @@ npm run dev:server
 npm run json:server
 
 ```
-Browse to http://localhost:3001/graphql
-User Graphiql to send request
-Sample request:
+###### Browse to http://localhost:3001/graphql
+###### Use GraphiQL to send the request
+#### Sample request:
 ```
 {
   customer(id: "5")
